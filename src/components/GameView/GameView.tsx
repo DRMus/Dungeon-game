@@ -45,6 +45,7 @@ import BgImagePNG from "../../assets/Background/Floor.png";
 import characterPNG from "../../assets/Character/character.png";
 
 import styles from "./GameView.module.scss";
+import classNames from "classnames";
 
 export const GameView = () => {
   const navigate = useNavigate();
@@ -56,7 +57,6 @@ export const GameView = () => {
   const characterRef = useRef<Konva.Sprite>(null);
   const keyUpRef = useRef<boolean>(false);
   const keyDownTimeoutRef = useRef<number>();
-  const sectionRef = useRef<HTMLInputElement>(null);
 
   const gameOverRef = useRef<boolean>(false);
   const positionRef = useRef<IPosition>({
@@ -239,12 +239,12 @@ export const GameView = () => {
 
   return (
     <section
-      className={
-        "w-1/2 h-full flex flex-col items-center justify-between relative " + styles.gameViewSection
-      }
-      onClick={() => sectionRef.current?.focus()}
+      className={classNames(
+        "w-1/2 h-full flex flex-col items-center relative ",
+        { "justify-between": levelConfig, "justify-center": !levelConfig },
+        styles.gameViewSection
+      )}
     >
-      <input type="text" name="" ref={sectionRef} className="w-0 h-0" />
       {levelConfig ? (
         <>
           <header className="py-3 px-4 w-full flex justify-between items-center">
