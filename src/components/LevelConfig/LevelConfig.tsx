@@ -1,10 +1,9 @@
-import React, { useCallback, useEffect, useState } from "react";
-import AreaItem from "./fragments/AreaItem";
-import { StageConfig, createLeveltemplate } from "../../utils/constants";
+import { useCallback, useEffect, useState } from "react";
+import { createLeveltemplate } from "../../utils/constants";
 import LevelContext from "./LevelContext";
 import AreaConfig from "./fragments/AreaConfig";
 import AreaActions from "./fragments/AreaActions";
-import { IAreaSize, ILevelConfig } from "../../interfaces";
+import { IAreaSize } from "../../interfaces";
 import storageActions from "../../utils/storageActions";
 
 const LevelConfig = () => {

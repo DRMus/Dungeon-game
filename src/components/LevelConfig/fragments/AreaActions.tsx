@@ -1,10 +1,9 @@
-import React, { useContext, useRef, useState } from "react";
+import React, { useContext } from "react";
 import { LevelContextValues } from "../LevelContext";
 import GameButton from "../../Templates/GameButton";
 import GameInput from "../../Templates/GameInput";
 import { IAreaSize } from "../../../interfaces";
 import ConfigSection from "../../Templates/ConfigSection";
-import classNames from "classnames";
 import { useNavigate } from "react-router";
 
 interface Props {

@@ -1,4 +1,3 @@
-import React from "react";
 import GameButton from "../../Templates/GameButton";
 import { NavigateFunction } from "react-router";
 

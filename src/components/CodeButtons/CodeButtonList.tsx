@@ -1,7 +1,6 @@
-import React, { useContext, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { IButtonState, IButtonValue } from "../../interfaces";
 import CodeButtonView from "./CodeButtonView";
-import { ControlContextValues } from "../ControlView/ControlContext";
 
 interface Props {
   buttonsList: IButtonValue[];

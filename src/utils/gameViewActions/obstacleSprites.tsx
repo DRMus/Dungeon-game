@@ -1,5 +1,4 @@
-import Konva from "konva";
-import { Rect, Sprite } from "react-konva";
+import { Sprite } from "react-konva";
 import { ILevelConfig, IObstacles } from "../../interfaces";
 import getTexture from "../getTexture";
 import { COIN_SPRITE_ANIMATIONS, StageConfig } from "../constants";
