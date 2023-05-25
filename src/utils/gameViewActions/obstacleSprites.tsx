@@ -3,7 +3,7 @@ import { ILevelConfig, IObstacles } from "../../interfaces";
 import getTexture from "../getTexture";
 import { COIN_SPRITE_ANIMATIONS, StageConfig } from "../constants";
 
-import coin from "../../assets/Items/coin.png";
+import coin from "/assets/Items/coin.png";
 
 function* generKey() {
   let key = 0;
