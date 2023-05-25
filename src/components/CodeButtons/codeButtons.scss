@@ -1,0 +1,18 @@
+.codeButtons-enter {
+  animation: showButton 400ms ease-in-out;
+}
+
+@keyframes showButton {
+  0% {
+    transform: scale(0.1);
+  }
+  60% {
+    transform: scale(1.2);
+  }
+  80%{
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

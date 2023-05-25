@@ -1,0 +1,42 @@
+.inputBox {
+    display: flex;
+    height: 40px;
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+}
+
+.deleteBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    font-size: 16px;
+    border-radius: 100%;
+    opacity: 0.5;
+    transition: opacity 150ms;
+    background-color: #dc2626;
+    z-index: 10;
+    &:enabled:hover {
+        opacity: 1;
+    }
+}
+
+.errorCloud {
+    background-color: #fff;
+    border-radius: 10px;
+    position: relative;
+    width: 170px;
+    height: 80px;
+    padding: 10px 20px;
+    &::after {
+        content: "";
+        position: absolute;
+        left: 99.5%;
+        top: 3px;
+        width: 19px;
+        height: 48px;
+        background-image: url("../../assets/Items/error-cloud-arrow.svg");
+    }
+}
